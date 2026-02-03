@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export function HeroSection() {
-  const scrollToProjects = () => {
-    const element = document.querySelector("#projects");
+  const scrollToContact = () => {
+    const element = document.querySelector("#contact");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -46,7 +46,7 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Full Stack Developer
+              Computer Science Student
             </motion.h2>
             <motion.p
               className="text-lg text-muted-foreground max-w-xl mb-8 mx-auto lg:mx-0"
@@ -54,8 +54,8 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              Passionate about creating elegant solutions to complex problems.
-              I build modern web applications with cutting-edge technologies.
+              2nd year B.Tech CSE student passionate about Java, OOPS, and Web Development. 
+              I enjoy converting problem statements into working applications.
             </motion.p>
 
             {/* Social Links */}
@@ -88,8 +88,8 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
             >
-              <Button size="lg" onClick={scrollToProjects} className="gap-2">
-                View My Work
+              <Button size="lg" onClick={scrollToContact} className="gap-2">
+                Get In Touch
                 <ArrowDown className="h-4 w-4" />
               </Button>
             </motion.div>

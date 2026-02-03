@@ -5,32 +5,27 @@ import { useRef } from "react";
 
 const skillCategories = [
   {
-    title: "Frontend",
+    title: "Languages & Core",
     skills: [
-      { name: "React", icon: "⚛️" },
-      { name: "TypeScript", icon: "📘" },
-      { name: "Next.js", icon: "▲" },
-      { name: "Tailwind CSS", icon: "🎨" },
-      { name: "HTML/CSS", icon: "🌐" },
+      { name: "Java", icon: "☕" },
+      { name: "JavaScript", icon: "🟨" },
+      { name: "HTML", icon: "🌐" },
+      { name: "CSS", icon: "🎨" },
+      { name: "OOPS", icon: "🔷" },
     ],
   },
   {
-    title: "Backend",
+    title: "Database & Design",
     skills: [
-      { name: "Node.js", icon: "🟢" },
-      { name: "Python", icon: "🐍" },
-      { name: "PostgreSQL", icon: "🐘" },
-      { name: "MongoDB", icon: "🍃" },
-      { name: "REST APIs", icon: "🔗" },
+      { name: "MySQL", icon: "🐬" },
+      { name: "Responsive Design", icon: "📱" },
     ],
   },
   {
-    title: "Tools & Others",
+    title: "Tools",
     skills: [
-      { name: "Git", icon: "📦" },
-      { name: "Docker", icon: "🐳" },
-      { name: "AWS", icon: "☁️" },
-      { name: "Figma", icon: "🎨" },
+      { name: "Git & GitHub", icon: "📦" },
+      { name: "LinkedIn", icon: "💼" },
       { name: "VS Code", icon: "💻" },
     ],
   },
