@@ -69,19 +69,19 @@ export function AboutSection() {
                   </div>
                   <div className="flex-1">
                     <h4 className="text-xl font-semibold text-foreground">
-                      Bachelor of Science in Computer Science
+                      Bachelor of Technology in Computer Science & Engineering
                     </h4>
                     <p className="text-primary font-medium mt-1">
-                      University of Technology
+                      LNCT University
                     </p>
                     <div className="flex flex-wrap gap-4 mt-3 text-sm text-muted-foreground">
                       <span className="flex items-center gap-1">
                         <Calendar className="h-4 w-4" />
-                        2018 - 2022
+                        2024 - 2028
                       </span>
                       <span className="flex items-center gap-1">
                         <MapPin className="h-4 w-4" />
-                        New York, USA
+                        Bhopal, India
                       </span>
                     </div>
                     <div className="mt-4">
