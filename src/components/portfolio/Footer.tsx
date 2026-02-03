@@ -29,7 +29,7 @@ export function Footer() {
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:john@example.com">
+              <a href="mailto:ayushsinghrajawat8@gmail.com">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
