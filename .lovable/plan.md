@@ -1,101 +1,56 @@
 
 
-# Developer Portfolio Website Plan
+# Update Portfolio Content Plan
 
 ## Overview
-A feature-rich, elegant developer portfolio with smooth animations, dark/light theme toggle, and a database-backed contact form. The design will be professional and sophisticated with subtle animations to create a polished experience.
+Update the portfolio with Ayush's actual bio, lifestyle description, and contact information. The contact form will be simplified to show only contact details without the message form.
 
 ---
 
-## Pages & Sections
+## Changes Summary
 
-### 1. Hero Section
-- Large, impactful introduction with your name and title (e.g., "Full Stack Developer")
-- Professional photo/avatar placeholder
-- Animated text or tagline
-- Quick navigation links and social media icons (GitHub, LinkedIn, etc.)
-- Call-to-action button to view projects or download resume
+### 1. About Me Section (`AboutSection.tsx`)
 
-### 2. About Me Section
-- Brief bio and personal introduction
-- Your background story and what drives you as a developer
-- **Education/College Details** section with:
-  - University/college name
-  - Degree and field of study
-  - Graduation year
-  - Relevant coursework or achievements
+**Update "Who I Am" bio to:**
+> "I am a 2nd year Computer Science student learning Java, OOPS and Web Development. I enjoy converting problem statements into working applications and improving my backend + frontend skills."
 
-### 3. Skills Section
-- Visual skill display with categories (Frontend, Backend, Tools, etc.)
-- Skill cards or progress indicators
-- Technology icons for each skill
-- Elegant hover animations
-
-### 4. Projects Section (Card Grid)
-- Grid of project cards with:
-  - Project thumbnail/image
-  - Project title and brief description
-  - Tech stack tags
-  - Links to live demo and GitHub repo
-- Smooth hover effects and animations
-- Filter by technology (optional enhancement)
-
-### 5. Contact Section
-- Contact form with fields:
-  - Name
-  - Email
-  - Subject
-  - Message
-- Form validation with helpful error messages
-- **Messages saved to database** (requires backend setup)
-- Social links and email display
-- Success/error notifications
+**Add lifestyle paragraph:**
+> "I follow a simple and focused lifestyle centered around learning, consistency, and self-improvement. I enjoy building projects, exploring new ideas in technology, and continuously upgrading my skills."
 
 ---
 
-## Features
+### 2. Contact Section (`ContactSection.tsx`)
 
-### Dark/Light Theme Toggle
-- Toggle button in the header/navigation
-- Smooth transition between themes
-- Remembers user preference
+**Remove the contact form entirely** - delete the form card with name, email, subject, and message fields.
 
-### Resume Download
-- Prominent download button
-- PDF resume download functionality
-- Placeholder for your resume file
+**Update contact information to:**
+- **Email**: ayushsinghrajawat8@gmail.com
+- **Phone**: +91 6261597001
+- **Location**: Bhopal, India
 
-### Scroll Animations
-- Smooth fade-in animations as sections come into view
-- Subtle parallax effects
-- Staggered animations for project cards and skill items
-
-### Navigation
-- Sticky/fixed navigation header
-- Smooth scroll to sections
-- Mobile-responsive hamburger menu
+**Simplify layout** - center the contact info cards since there's no form on the left anymore.
 
 ---
 
-## Design Style: Elegant & Professional
-- Clean typography with a sophisticated font pairing
-- Neutral color palette with an accent color
-- Generous whitespace and spacing
-- Subtle shadows and borders
-- Professional, corporate-friendly aesthetic
+### 3. Footer & Hero Section (`Footer.tsx`, `HeroSection.tsx`)
+
+**Update email link** to use the correct email: ayushsinghrajawat8@gmail.com
 
 ---
 
-## Technical Requirements
+## Technical Details
 
-### Backend Needed
-Since you want to save contact form messages to a database, I'll set up **Lovable Cloud** which provides:
-- A managed database to store contact form submissions
-- Secure message storage you can access later
-- No external account setup required
+| File | Changes |
+|------|---------|
+| `AboutSection.tsx` | Replace bio paragraphs with student background and lifestyle description |
+| `ContactSection.tsx` | Remove form component, update contact info, center layout |
+| `Footer.tsx` | Update email link |
+| `HeroSection.tsx` | Update email link in social icons |
 
 ---
 
-## Summary
-This portfolio will showcase your skills and projects with an elegant, animated design. It includes all the sections you requested: Hero, About (with education), Skills, Projects, and Contact with database storage. The dark/light toggle, resume download, and scroll animations will make it stand out professionally.
+## Notes
+- The database table for contact messages will remain but won't be used since the form is removed
+- The contact section will become a simple information display with animated cards
+- All animations and styling will be preserved
 
