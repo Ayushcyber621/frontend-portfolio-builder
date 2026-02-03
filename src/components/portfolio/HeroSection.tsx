@@ -38,7 +38,7 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              John Doe
+              Ayush Singh
             </motion.h1>
             <motion.h2
               className="text-2xl md:text-3xl text-muted-foreground mb-8"
