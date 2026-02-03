@@ -35,19 +35,14 @@ export function AboutSection() {
             </h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I'm a passionate Full Stack Developer with over 5 years of experience
-                building web applications. I specialize in creating elegant, user-centric
-                solutions that solve real-world problems.
+                I am a 2nd year Computer Science student learning Java, OOPS and Web Development. 
+                I enjoy converting problem statements into working applications and improving my 
+                backend + frontend skills.
               </p>
               <p>
-                My journey in tech began during my university years when I discovered
-                the joy of turning ideas into functional applications. Since then,
-                I've been continuously learning and adapting to new technologies.
-              </p>
-              <p>
-                When I'm not coding, you can find me exploring new technologies,
-                contributing to open-source projects, or enjoying a good cup of coffee
-                while reading tech blogs.
+                I follow a simple and focused lifestyle centered around learning, consistency, 
+                and self-improvement. I enjoy building projects, exploring new ideas in technology, 
+                and continuously upgrading my skills.
               </p>
             </div>
           </motion.div>
