@@ -10,7 +10,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <p className="text-muted-foreground flex items-center gap-1 justify-center md:justify-start">
-              Made with <Heart className="h-4 w-4 text-destructive" /> by John Doe
+              Made with <Heart className="h-4 w-4 text-destructive" /> by Ayush Singh
             </p>
             <p className="text-sm text-muted-foreground mt-1">
               © {currentYear} All rights reserved.
