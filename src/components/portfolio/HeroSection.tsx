@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import ayushPhoto from "@/assets/ayush-photo.jpeg";
 
 export function HeroSection() {
   const scrollToContact = () => {
@@ -103,12 +104,13 @@ export function HeroSection() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <div className="relative">
-              <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-muted flex items-center justify-center text-6xl">
-                  👨‍💻
-                </div>
+              <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center p-2">
+                <img
+                  src={ayushPhoto}
+                  alt="Ayush Singh"
+                  className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover"
+                />
               </div>
-              {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl" />
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-accent/10 rounded-full blur-2xl" />
             </div>

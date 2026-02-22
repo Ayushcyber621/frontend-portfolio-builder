@@ -36,7 +36,7 @@ export function Header() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Portfolio
+            Ayush Singh
           </motion.a>
 
           {/* Desktop Navigation */}
