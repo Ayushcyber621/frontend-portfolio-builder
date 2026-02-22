@@ -104,7 +104,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <div className="relative">
-              <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center p-2">
+              <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-violet-600 flex items-center justify-center p-[6px]">
                 <img
                   src={ayushPhoto}
                   alt="Ayush Singh"
