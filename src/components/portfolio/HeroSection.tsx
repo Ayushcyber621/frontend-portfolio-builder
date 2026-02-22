@@ -103,16 +103,34 @@ export function HeroSection() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="relative">
-              <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-violet-600 flex items-center justify-center p-[6px]">
-                <img
-                  src={ayushPhoto}
-                  alt="Ayush Singh"
-                  className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover"
-                />
-              </div>
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl" />
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-accent/10 rounded-full blur-2xl" />
+            <div className="relative w-72 h-72 md:w-96 md:h-96 flex items-center justify-center">
+              {/* Rotating gradient ring */}
+              <motion.div
+                className="absolute inset-0 rounded-full"
+                style={{
+                  background: "conic-gradient(from 0deg, #3b82f6, #8b5cf6, #ec4899, #f59e0b, #10b981, #3b82f6)",
+                  padding: "4px",
+                }}
+                animate={{ rotate: 360 }}
+                transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+              >
+                <div className="w-full h-full rounded-full bg-background" />
+              </motion.div>
+              {/* Second ring rotating opposite */}
+              <motion.div
+                className="absolute inset-2 rounded-full opacity-50 blur-sm"
+                style={{
+                  background: "conic-gradient(from 180deg, #8b5cf6, #3b82f6, #10b981, #f59e0b, #ec4899, #8b5cf6)",
+                }}
+                animate={{ rotate: -360 }}
+                transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
+              />
+              {/* Photo */}
+              <img
+                src={ayushPhoto}
+                alt="Ayush Singh"
+                className="absolute inset-3 rounded-full object-cover z-10"
+              />
             </div>
           </motion.div>
         </div>
