@@ -103,7 +103,7 @@ export function HeroSection() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="relative w-72 h-72 md:w-96 md:h-96 flex items-center justify-center">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 flex items-center justify-center">
               {/* Rotating gradient ring */}
               <motion.div
                 className="absolute inset-0 rounded-full"
