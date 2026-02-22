@@ -55,7 +55,7 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              2nd year B.Tech CSE student passionate about Java, OOPS, and Web Development. 
+              2nd year B.Tech CSE student passionate about Java, DSA, and Web Development. 
               I enjoy converting problem statements into working applications.
             </motion.p>
 
