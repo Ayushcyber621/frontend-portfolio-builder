@@ -125,12 +125,13 @@ export function HeroSection() {
                 animate={{ rotate: -360 }}
                 transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
               />
-              {/* Photo */}
-              <img
-                src={ayushPhoto}
-                alt="Ayush Singh"
-                className="absolute inset-3 rounded-full object-cover z-10"
-              />
+              <div className="absolute inset-[6px] rounded-full overflow-hidden z-10">
+                <img
+                  src={ayushPhoto}
+                  alt="Ayush Singh"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </motion.div>
         </div>
