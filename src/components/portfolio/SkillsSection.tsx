@@ -11,7 +11,7 @@ const skillCategories = [
       { name: "JavaScript", icon: "🟨" },
       { name: "HTML", icon: "🌐" },
       { name: "CSS", icon: "🎨" },
-      { name: "OOPS", icon: "🔷" },
+      { name: "DSA", icon: "🔷" },
     ],
   },
   {
