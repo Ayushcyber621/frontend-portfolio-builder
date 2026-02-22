@@ -35,7 +35,7 @@ export function AboutSection() {
             </h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I am a 2nd year Computer Science student learning Java, OOPS and Web Development. 
+                I am a 2nd year Computer Science student learning Java, DSA and Web Development. 
                 I enjoy converting problem statements into working applications and improving my 
                 backend + frontend skills.
               </p>
