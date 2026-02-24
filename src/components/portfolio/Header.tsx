@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { motion, AnimatePresence } from "framer-motion";
@@ -58,12 +58,6 @@ export function Header() {
 
           <div className="hidden md:flex items-center gap-4">
             <ThemeToggle />
-            <Button asChild variant="outline" size="sm">
-              <a href="/resume.pdf" download className="flex items-center gap-2">
-                <Download className="h-4 w-4" />
-                Resume
-              </a>
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -102,12 +96,6 @@ export function Header() {
                     {link.name}
                   </a>
                 ))}
-                <Button asChild variant="outline" size="sm" className="w-fit">
-                  <a href="/resume.pdf" download className="flex items-center gap-2">
-                    <Download className="h-4 w-4" />
-                    Resume
-                  </a>
-                </Button>
               </div>
             </motion.div>
           )}
