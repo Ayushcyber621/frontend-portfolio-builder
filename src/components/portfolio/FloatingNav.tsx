@@ -1,11 +1,11 @@
-import { Home, User, Code, Mail } from "lucide-react";
+import { Home, User, Code, Mail, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const navItems = [
   { name: "Home", href: "#home", icon: Home },
   { name: "About", href: "#about", icon: User },
-  
+  { name: "Resume", href: "/resume.pdf", icon: FileText, isDownload: true },
   { name: "Skills", href: "#skills", icon: Code },
   { name: "Contact", href: "#contact", icon: Mail },
 ];
@@ -51,6 +51,26 @@ export function FloatingNav() {
       {navItems.map((item) => {
         const isActive = activeSection === item.href.replace("#", "");
         const Icon = item.icon;
+
+        if ('isDownload' in item && item.isDownload) {
+          return (
+            <motion.a
+              key={item.name}
+              href={item.href}
+              download
+              className="group relative flex items-center"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className="p-3 rounded-full bg-background/80 backdrop-blur-md border border-border shadow-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                <Icon className="h-5 w-5" />
+              </div>
+              <span className="absolute left-14 px-3 py-1.5 rounded-md bg-background/90 backdrop-blur-md border border-border text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap shadow-lg">
+                {item.name}
+              </span>
+            </motion.a>
+          );
+        }
 
         return (
           <motion.button
